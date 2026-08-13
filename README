@@ -1,0 +1,94 @@
+# Proyecto NTD - Dos aplicaciones Flask
+
+Este proyecto contiene dos aplicaciones web independientes desarrolladas con Flask como parte de la clase de Nuevas Tecnologias. La primera fue realizada en clase, y la segunda fue desarrollada con asistencia de inteligencia artificial.
+
+## Estructura del proyecto
+
+- `app.py`: Primera aplicacion (actividad de clase). Muestra un saludo simple con nombre y correo.
+- `templates/index.html`: Plantilla utilizada por `app.py`.
+- `portal.py`: Segunda aplicacion (actividad con IA). Muestra un portal de inicio con tarjetas de navegacion.
+- `templates/home.html`: Plantilla utilizada por `portal.py`.
+- `requirements.txt`: Dependencias compartidas (Flask y sus librerias).
+- `venv/`: Entorno virtual (no se sube a GitHub).
+- `.gitignore`: Excluye archivos temporales y el entorno virtual.
+- `to-do.py`: Ejercicio de consola (MVC) visto en clase, no relacionado con las aplicaciones web.
+
+## Requisitos previos
+
+- Tener Python instalado (version 3.8 o superior).
+- Tener Git instalado y configurado.
+
+## Configuracion del entorno virtual (compartido para ambas aplicaciones)
+
+### 1. Crear el entorno virtual
+
+python -m venv venv
+Si python no es reconocido, usar:
+py -m venv venv
+
+### 2. Activar el entorno virtual
+
+En Windows (PowerShell):
+venv\Scripts\activate
+
+En Windows (CMD o Git Bash):
+venv\Scripts\activate.bat
+
+En macOS / Linux:
+source venv/bin/activate
+
+Debe aparecer (venv) al inicio de la linea de comandos.
+
+### 3. Instalar las dependencias
+
+pip install -r requirements.txt
+
+Instrucciones para ejecutar cada aplicacion
+
+Para ejecutar la aplicacion de clase (app.py)
+python app.py
+Luego abrir el navegador en http://127.0.0.1:5000/saludo
+
+Para ejecutar la aplicacion realizada IA (portal.py)
+python portal.py
+Luego abrir el navegador en http://127.0.0.1:5000
+
+Detener el servidor
+Presionar Ctrl + C en la terminal donde se esta ejecutando la aplicacion.
+
+Comandos de Git y control de versiones
+Inicializar un repositorio local
+git init
+
+Agregar archivos al area de preparacion
+git add .
+
+Realizar un commit
+git commit -m "Mensaje descriptivo del cambio"
+
+Cambiar el nombre de la rama principal
+git branch -M main
+
+### 4. Creacion y publicacion en GitHub
+
+#### 1. Crear un repositorio en GitHub
+Iniciar sesion en GitHub.
+
+Hacer clic en "New repository".
+
+Asignar un nombre (ej. NTD-proyecto).
+
+No marcar "Add a README", ".gitignore" ni "license".
+
+Hacer clic en "Create repository".
+
+#### 2. Vincular el repositorio local con el remoto
+git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
+
+#### 3. Subir los cambios a GitHub
+git push -u origin main
+
+### 4. Actualizar el repositorio despues de nuevos cambios
+git add .
+git commit -m "Descripcion del cambio"
+git push
