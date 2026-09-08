@@ -14,6 +14,8 @@ La primera fue realizada en clase, y la segunda fue desarrollada con asistencia 
 - `.gitignore`: Excluye archivos temporales y el entorno virtual.
 - `to-do.py`: Ejercicio de consola (MVC) visto en clase, no relacionado con las aplicaciones web.
 
+**Recuerda:** Antes de instalar las dependencias, asegúrate de tener el entorno virtual activado (debe aparecer `(venv)` al inicio de la línea de comandos).
+
 ## Requisitos previos
 
 - Tener Python instalado (version 3.8 o superior).
@@ -45,7 +47,7 @@ Debe aparecer (venv) al inicio de la linea de comandos.
 
 ### 3. Instalar las dependencias
 
-pip install -r requirements.txt
+pip install -r "Aplicación Flask/requirements.txt"
 
 Instrucciones para ejecutar cada aplicacion
 
@@ -81,7 +83,7 @@ git branch -M main
 
 ### 4. Creacion y publicacion en GitHub
 
-#### 1. Crear un repositorio en GitHub
+#### 4.1. Crear un repositorio en GitHub
 Iniciar sesion en GitHub.
 
 Hacer clic en "New repository".
@@ -92,13 +94,13 @@ No marcar "Add a README", ".gitignore" ni "license".
 
 Hacer clic en "Create repository".
 
-#### 2. Vincular el repositorio local con el remoto
+#### 4.2. Vincular el repositorio local con el remoto
 git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
 
-#### 3. Subir los cambios a GitHub
+#### 4.3. Subir los cambios a GitHub
 git push -u origin main
 
-### 4. Actualizar el repositorio despues de nuevos cambios
+### 4.4. Actualizar el repositorio despues de nuevos cambios
 git add .
 git commit -m "Descripcion del cambio"
 git push
