@@ -49,7 +49,7 @@ Debe aparecer (venv) al inicio de la linea de comandos.
 
 pip install -r "Aplicación Flask/requirements.txt"
 
-Instrucciones para ejecutar cada aplicacion
+### Instrucciones para ejecutar cada aplicación
 
 **IMPORTANTE:** Primero debes entrar a la carpeta de las aplicaciones:
 
@@ -100,7 +100,7 @@ git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
 #### 4.3. Subir los cambios a GitHub
 git push -u origin main
 
-### 4.4. Actualizar el repositorio despues de nuevos cambios
+### 5. Actualizar el repositorio despues de nuevos cambios
 git add .
 git commit -m "Descripcion del cambio"
 git push
