@@ -4,11 +4,11 @@ Este proyecto contiene dos aplicaciones web independientes desarrolladas con Fla
 
 ## Estructura del proyecto
 
-- `app.py`: Primera aplicacion (actividad de clase). Muestra un saludo simple con nombre y correo.
-- `templates/index.html`: Plantilla utilizada por `app.py`.
-- `portal.py`: Segunda aplicacion (actividad con IA). Muestra un portal de inicio con tarjetas de navegacion.
-- `templates/home.html`: Plantilla utilizada por `portal.py`.
-- `requirements.txt`: Dependencias compartidas (Flask y sus librerias).
+- `Aplicación Flask/app.py`: Primera aplicación (actividad de clase). Muestra un saludo simple con nombre y correo.
+- `Aplicación Flask/templates/index.html`: Plantilla utilizada por `app.py`.
+- `Aplicación Flask/portal.py`: Segunda aplicación (actividad con IA). Muestra un portal de inicio con tarjetas de navegación.
+- `Aplicación Flask/templates/home.html`: Plantilla utilizada por `portal.py`.
+- `Aplicación Flask/requirements.txt`: Dependencias compartidas (Flask y sus librerías).
 - `venv/`: Entorno virtual (no se sube a GitHub).
 - `.gitignore`: Excluye archivos temporales y el entorno virtual.
 - `to-do.py`: Ejercicio de consola (MVC) visto en clase, no relacionado con las aplicaciones web.
@@ -19,6 +19,8 @@ Este proyecto contiene dos aplicaciones web independientes desarrolladas con Fla
 - Tener Git instalado y configurado.
 
 ## Configuracion del entorno virtual (compartido para ambas aplicaciones)
+
+**Nota:** El entorno virtual se crea en la raíz del proyecto (`NTD/`), no dentro de `Aplicación Flask`.
 
 ### 1. Crear el entorno virtual
 
@@ -45,13 +47,19 @@ pip install -r requirements.txt
 
 Instrucciones para ejecutar cada aplicacion
 
-Para ejecutar la aplicacion de clase (app.py)
-python app.py
-Luego abrir el navegador en http://127.0.0.1:5000/saludo
+**IMPORTANTE:** Primero debes entrar a la carpeta de las aplicaciones:
 
-Para ejecutar la aplicacion realizada IA (portal.py)
+cd "Aplicación Flask"
+
+Para ejecutar la aplicación de clase (`app.py`):
+
+python app.py
+Abrir el navegador en http://127.0.0.1:5000/saludo
+
+Para ejecutar la aplicación con IA (`portal.py`):
+
 python portal.py
-Luego abrir el navegador en http://127.0.0.1:5000
+Abrir el navegador en http://127.0.0.1:5000
 
 Detener el servidor
 Presionar Ctrl + C en la terminal donde se esta ejecutando la aplicacion.
