@@ -1,6 +1,7 @@
 # Proyecto NTD - Dos aplicaciones Flask
 
-Este proyecto contiene dos aplicaciones web independientes desarrolladas con Flask como parte de la clase de Nuevas Tecnologias. La primera fue realizada en clase, y la segunda fue desarrollada con asistencia de inteligencia artificial.
+Este proyecto contiene dos aplicaciones web independientes desarrolladas con Flask como parte de la clase de Nuevas Tecnologias. 
+La primera fue realizada en clase, y la segunda fue desarrollada con asistencia de inteligencia artificial.
 
 ## Estructura del proyecto
 
@@ -20,7 +21,8 @@ Este proyecto contiene dos aplicaciones web independientes desarrolladas con Fla
 
 ## Configuracion del entorno virtual (compartido para ambas aplicaciones)
 
-**Nota:** El entorno virtual se crea en la raíz del repositorio (la carpeta donde está `Aplicación Flask`), no dentro de ella.
+**Nota:** El entorno virtual se crea en la raíz del repositorio (al mismo nivel que la carpeta `Aplicación Flask`), no dentro de ella.
+Por ejemplo, si clonas el repositorio y se crea la carpeta `Nuevas-tecnolog-as/`, allí debes ejecutar `python -m venv venv`.
 
 ### 1. Crear el entorno virtual
 
