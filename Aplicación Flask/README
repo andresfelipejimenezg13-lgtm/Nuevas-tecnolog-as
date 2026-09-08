@@ -20,7 +20,7 @@ Este proyecto contiene dos aplicaciones web independientes desarrolladas con Fla
 
 ## Configuracion del entorno virtual (compartido para ambas aplicaciones)
 
-**Nota:** El entorno virtual se crea en la raíz del proyecto (`NTD/`), no dentro de `Aplicación Flask`.
+**Nota:** El entorno virtual se crea en la raíz del repositorio (la carpeta donde está `Aplicación Flask`), no dentro de ella.
 
 ### 1. Crear el entorno virtual
 
