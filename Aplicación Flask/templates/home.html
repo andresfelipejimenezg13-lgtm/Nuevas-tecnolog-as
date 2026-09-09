@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTD Portal - Flask</title>
+    <!-- Fuente bonita y librería de íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 0, 20, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 0;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: 6px;
+            background: linear-gradient(135deg, #ff4dff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 40px rgba(180, 0, 255, 0.5);
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.4rem;
+            color: #ddd;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+        .card-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 24px;
+            padding: 35px 25px;
+            width: 200px;
+            transition: all 0.4s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+        .card:hover {
+            transform: translateY(-15px) scale(1.05);
+            border-color: #ff4dff;
+            box-shadow: 0 0 40px rgba(255, 77, 255, 0.3);
+        }
+        .card a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .card a:hover {
+            color: #ff4dff;
+        }
+        .icon {
+            font-size: 4rem;
+            display: block;
+            margin-bottom: 20px;
+            color: #00d4ff;
+        }
+        .card p {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 10px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .footer {
+            margin-top: 60px;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 400;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.8rem; }
+            .card { width: 150px; padding: 20px; }
+            .icon { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 NTD Portal</h1>
+        <p class="subtitle">Bienvenido a tu espacio de productividad y proyectos</p>
+
+        <div class="card-container">
+            <!-- Tarjeta 1: Saludo -->
+            <div class="card">
+                <span class="icon"><i class="fas fa-user-astronaut"></i></span>
+                <a href="/saludo">Mi Perfil</a>
+                <p>Ver mi nombre y correo</p>
+            </div>
+            <!-- Tarjeta 2: To-Do List -->
+            <div class="card">
+                <span class="icon"><i class="fas fa-tasks"></i></span>
+                <a href="/tareas">To-Do List</a>
+                <p>Gestiona tus tareas pendientes</p>
+            </div>
+            <!-- Tarjeta 3: Juegos (placeholder) -->
+            <div class="card">
+                <span class="icon"><i class="fas fa-gamepad"></i></span>
+                <a href="/juego">Mini Juego</a>
+                <p>Próximamente...</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>⚡ Desarrollado con Flask • Nuevas Tecnologías 2026</p>
+        </div>
+    </div>
+</body>
+</html>
+</html>
