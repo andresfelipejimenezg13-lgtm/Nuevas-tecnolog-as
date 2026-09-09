@@ -1,1 +1,100 @@
+# API REST con Flask - Primer Backend
 
+Este proyecto implementa una API REST básica para gestionar una lista de productos. 
+Fue desarrollado como parte de la clase de Backend y expone los métodos **GET, POST, PUT y DELETE**. 
+Los endpoints permiten realizar operaciones CRUD sobre una lista de productos en memoria.
+
+## Estructura del proyecto (dentro de `Primer Backend`)
+
+- `app.py`: Código principal con los endpoints.
+- `requirements.txt`: Dependencias (Flask).
+- `screenshots/`: Capturas de pantalla de las pruebas realizadas en Postman.
+
+## Requisitos previos
+
+- Tener Python instalado (versión 3.8 o superior).
+- Tener Postman instalado para probar los endpoints (opcional, pero recomendado).
+- Tener Git instalado y configurado (para clonar el repositorio).
+
+## Configuración del entorno virtual (desde la raíz del repositorio)
+
+**Nota:** El entorno virtual se crea en la raíz del repositorio (`Nuevas-tecnolog-as/`), al mismo nivel que la carpeta `Primer Backend`. No se crea dentro de la carpeta del proyecto.
+
+### 1. Crear el entorno virtual (si no existe)
+
+```bash
+python -m venv venv
+
+Si el comando python no es reconocido, usar:
+
+py -m venv venv
+
+### 2. Activar el entorno virtual
+
+Windows (PowerShell): venv\Scripts\activate
+Windows (CMD o Git Bash): venv\Scripts\activate.bat
+macOS / Linux: source venv/bin/activate
+
+Al activarlo, deberías ver (venv) al inicio de la línea de comandos.
+
+### 3. Instalar las dependencias
+
+pip install -r "Primer Backend/requirements.txt"
+
+Esto instalará Flask y sus dependencias necesarias.
+
+## Instrucciones para ejecutar la aplicación
+
+**IMPORTANTE:** Primero debes entrar a la carpeta del proyecto.
+
+cd "Primer Backend"
+
+Luego, ejecuta el servidor:
+
+python app.py
+
+Verás un mensaje similar a:
+
+ * Running on http://127.0.0.1:5000
+ * Debugger PIN: xxx-xxx-xxx
+
+El servidor se ejecuta en modo debug (debug=True), por lo que los cambios en el código se recargan automáticamente. Para detenerlo, presiona Ctrl + C.
+
+### Endpoints disponibles
+
+GET /api/productos – Obtiene la lista completa de productos.
+
+GET /api/productos/<id> – Obtiene un producto específico por su ID.
+
+POST /api/productos – Crea un nuevo producto. Debes enviar un objeto JSON con id, nombre y precio.
+
+PUT /api/productos/<id> – Actualiza un producto existente. Debes enviar un objeto JSON con los campos a modificar.
+
+DELETE /api/productos/<id> – Elimina un producto por su ID.
+
+## Pruebas con Postman
+En la carpeta screenshots/ se encuentran las capturas de pantalla que muestran el funcionamiento de cada uno de los endpoints. 
+Estas imágenes demuestran las peticiones realizadas desde Postman y las respuestas obtenidas del servidor.
+
+## Nota sobre el entorno virtual y .gitignore
+La carpeta venv/ (o env/) está incluida en el archivo .gitignore y no se sube a GitHub. 
+Esto asegura que cada usuario cree su propio entorno virtual y evita conflictos por diferencias entre sistemas operativos.
+
+El archivo .gitignore también excluye:
+
+__pycache__/
+*.pyc
+Archivos de configuración de editores (.vscode/, .idea/)
+
+#### Proceso de subida a GitHub
+
+#### Vincular el repositorio local con el remoto
+git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
+
+1. Se inicializó Git en la carpeta del proyecto.
+
+2. Se vinculó el repositorio local con el remoto usando git remote add origin.
+
+3. Se creó el archivo .gitignore para excluir el entorno virtual y archivos innecesarios.
+
+4. Se agregaron los archivos con git add ., se hizo commit y se subieron a la rama main con git push.
